@@ -1,0 +1,325 @@
+@import "nullstyle.scss";
+@import "normalize.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+//Note for me
+//   font-family: 'Poppins', sans-serif;
+main{
+	margin-bottom: 20px;
+}
+//common styles
+.title{
+	font-size: 36px;
+	font-weight: 700;	
+	line-height: 1.5;
+}
+//==============================================
+header{
+	width: 100%;
+	position: absolute;
+}
+.header {
+	&__container{
+		padding: 30px 0;
+	}
+  &__menu {
+	display: flex;
+	align-items: center;
+  }
+}
+.menu {
+  &__logo {
+	flex: 1 1 auto;
+	}
+  &__body {
+	margin-right: 30px;
+	}
+  &__list {
+	display: flex;
+	column-gap: 25px;
+  }
+  &__link {
+	font-size: 14px;
+	&:hover{
+		text-decoration: underline;
+	}
+  }
+  &__btns {
+	display: flex;
+	column-gap: 14px;
+}
+&__btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	height: 46px;
+	width: 102px;
+	border-radius: 4px;
+	}
+}
+.btn-sign{
+	color: #173A56;
+	font-size: 16px;
+	font-weight: 800;
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+	border: 1px solid #bcd0e5;
+	text-shadow: #bcd0e5 0px 6px 6px;
+	transition: all 0.2s ease-out;
+	&:hover{
+		box-shadow: 0 1px 4px 0 rgba(0,0,0,.25);
+		text-shadow: #bcd0e5 0px 1px 6px;
+		transition: all 0.2s ease-out;
+	}
+}
+.btn {	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	border-radius: 4px;
+	color: #fff;
+	background-color: #FF9900;
+	font-weight: 600;
+	transition: all 0.2s ease-out;
+	&:hover{
+		background-color: #f78400;
+		color: #173A56;
+		transition: all 0.2s ease-out;
+	}
+}
+//==================================================================
+// page 1
+.greeting {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 30px;
+  &__row {
+	display: flex;
+	align-items: center;
+  }
+  &__column {
+	display: flex;
+	flex-direction: column;
+  }
+  &__label {
+	font-size: 44px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	line-height: 1.2;
+  }
+  &__text {
+	font-size: 18px;
+	margin-bottom: 45px;
+  }
+  &__links {
+	  display: flex;
+	  column-gap: 30px;
+	}
+  &__item {
+	height: 53px;
+	width: 175px;
+  }
+  &__link {
+	height: 100%;
+	&_watch{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		color: #FF9900;
+		text-decoration: underline;
+		background: url('/img/icons/videoPlay.png') 0 17px no-repeat;
+		text-align: center;
+	}
+  }
+}
+//==========================================================================
+//page 2
+.feature {
+  &__container {
+	margin-bottom: 50px;
+  }
+  &__title {
+	text-align: center;
+	max-width: 539px;
+	width: 100%;
+	margin: 54px auto;
+  }
+  &__row {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 60px;
+  }
+  &__button {
+	display: block;
+	height: 53px;
+	width: 175px;
+	margin: auto;
+  }
+  &__link {
+	height: 100%;
+	text-transform: uppercase;
+  }
+}
+.feature-content {
+  &__column {
+	max-width: 240px;
+	width: 100%;
+  }
+  &__img {
+	display: flex;
+	position: relative;
+	margin-bottom: 30px;
+	height: 50px;
+	width: 50px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 19px;
+	&::after{
+		content: "";
+		position: absolute;
+		z-index: -1;
+		height: 100%;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		border-top-right-radius: 19px;
+		border-top-left-radius: 19px;
+	}
+  }
+  &__img-cursor{
+	background-color: #7752BE;
+	&::after{
+		background-color: #baa8dc88;
+	}
+	}
+	&__img-chain{
+		background-color: #FAB005;
+		&::after{
+		background-color: #fab00572		
+		}
+	}
+	&__img-heart{
+		background-color: #F03E3D;
+		&::after{
+		background-color: #f03d3d5c;	
+		}
+	}
+	&__img-time{
+		background-color: #4DADF7;
+		&::after{
+		background-color: #4dadf750;		
+		}
+	}
+  &__label {
+	margin-bottom: 13px;
+	line-height: 1.6;
+	font-size: 22px;
+	font-weight: 700;
+  }
+  &__text {
+	line-height: 1.625;
+  }
+}
+//==========================================================================
+//design
+.main-content {
+	margin-bottom: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  &__column {
+	max-width: 486px;
+  }
+  &__title {
+	margin-bottom: 22px;
+  }
+  &__subtitle {
+	margin-bottom: 30px;
+  }
+  &__item {
+	 	margin-bottom: 25px;
+  }
+  &__item-title {
+	  font-weight: 700;
+	  margin-bottom: 12px;
+  }
+}
+//==========================================================================
+.managers{
+  &__container {
+	flex-direction: row-reverse;
+  }
+&__item {
+	margin-bottom: 30px;
+	padding-left: 12%;
+	background: url("/img/icons/checkPoint.png") 0 50% no-repeat;
+  }
+}
+
+//======================================================================
+//footer
+
+.footer {
+	padding: 20px 0;
+	width: 100%;
+	&__container {
+		padding: 100px 0 30px 0;
+		position: relative;
+		&::before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 2px;
+			width: 100%;
+			background-color: #979797;
+		}
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		height: 205px;
+  }
+ 
+  &__column {
+	&:not(:first-child){
+			align-self: flex-end;
+		}
+  }
+  &__item {
+	&:not(:last-child){
+		margin-bottom: 15px;
+	}
+  }
+  &__link {
+	&:hover{
+		text-decoration: underline;
+	}
+  }
+
+}
+.input-form {
+	width: 325px;
+	height: 48px;
+	border: 1px solid #BCD0E5;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	padding: 5px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #544837;
+	&:focus{
+		border-color: #8797a8;
+		border-width: 2px;
+	}
+}
+.submit-btn{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 39px;
+	width: 131px;
+}
